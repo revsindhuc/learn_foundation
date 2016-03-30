@@ -1,0 +1,111 @@
+p {
+    font-size: small;
+}
+
+
+/** To make Foundation rows fluid */
+.row {
+    max-width:100vw;
+}
+
+/** Uses viewport height unit to set to 100% of viewport height */
+.body-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.title-row {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.45);     
+}
+
+.logo {
+    margin-top:14px;
+    margin-left:72px;
+    height: 72px;
+    width: 172px;
+    z-index: 300;
+}
+
+/** To center the top navigation */
+.centered-pills { text-align:center; }
+.centered-pills ul.top-nav { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.top-nav { display:inline; } /* IE6 */
+*+html .centered-pills ul.top-nav { display:inline; } /* IE7 */
+
+
+.top-nav {
+   
+}
+
+.page {
+    overflow: hidden;
+}
+
+.left-column {
+    
+}
+
+.center-column {
+    vertical-align: middle;
+}
+
+
+.right-column {
+    
+}
+
+.dial {
+    margin: auto;
+}
+
+
+.temp-nav {
+    margin: auto;
+    width: 100px;
+}
+
+
+/** Spin effect commented - uncomment to see effect*/
+.dial:hover {
+    animation: spin-option-1 2s forwards;
+}
+
+@-webkit-keyframes spin-option-1{
+    0%{
+    transform: rotateZ(0deg);
+    }
+    100%{
+    transform: rotateZ(70deg);
+    }
+}
+
+
+.content-box {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.content-box h3 {
+    border-bottom: 1px dotted grey;
+}
+
+.content-box-icon {
+    margin-top: 20px;
+    border-radius: 50%;
+    /* border: 1px dotted grey; */
+    margin-left: 20px;
+    z-index: 10;
+}
+
+.hide-using-opacity {
+    opacity: 0;
+}
+
+.show-using-opacity {
+    opacity: 1;
+}
+
